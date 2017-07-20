@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#80dcdde4"
+              android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/action_sheet_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/action_sheet_cancel_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/muna_base_action_sheet_item_bg"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/base_action_sheet_item_text_normal"
+        android:textSize="18sp" />
+
+</LinearLayout>

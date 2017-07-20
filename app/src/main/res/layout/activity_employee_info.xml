@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_employee_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrtian.project.ui.view.homepage.EmployeeInfoActivity">
+
+    <com.jingchen.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jingchen.pulltorefresh.PullableListView
+            android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:footerDividersEnabled="true"
+            android:overScrollMode="never"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </com.jingchen.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

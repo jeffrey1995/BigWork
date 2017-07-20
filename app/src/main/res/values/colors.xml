@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="selector_pressed">#349cf3</color>
+    <color name="theme">#488FF0</color>
+    <color name="btn_disable">#349cf3</color>
+    <color name="line">#FF7F00</color>
+    <color name="toast_background">#28DEFF</color>
+
+    <!-- action sheet 颜色-->
+    <color name="base_action_sheet_item_bg_normal">#ffffff</color>
+    <color name="base_action_sheet_item_bg_press">#f8f8f8</color>
+    <color name="base_action_sheet_item_bg_disable">#ffffff</color>
+    <color name="base_action_sheet_item_text_highlight">#007aff</color>
+    <color name="base_action_sheet_item_text_normal">#333333</color>
+    <color name="base_action_sheet_item_text_warn">#ee5648</color>
+    <color name="base_action_sheet_divider">#b2b2b6</color>
+    <color name="base_action_sheet_bg_color">#dcdde4</color>
+
+    <color name="main_text_color">#333333</color>
+    <color name="divide">#e6ebf0</color>
+    <color name="mc_login_out_bg">#ee5648</color>
+    <color name="sub_text_color">#808080</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="hint_color">#C5BFAC</color>
+
+</resources>

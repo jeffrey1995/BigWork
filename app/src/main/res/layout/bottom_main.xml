@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/footer_course_ioc"
+            android:text="@string/menu_homepage"
+            android:textColor="@drawable/footer_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_course"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/footer_direct_ioc"
+            android:text="@string/menu_attendance"
+            android:textColor="@drawable/footer_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_direct_seeding"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/footer_home_ico"
+            android:text="@string/menu_system"
+            android:textColor="@drawable/footer_textcolor" />
+
+    </RadioGroup>
+
+</LinearLayout>

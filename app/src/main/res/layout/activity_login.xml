@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrtian.project.ui.view.login.LoginActivity">
+    <!--输入用户名-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_middle"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/img_account" />
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:background="@color/color_white"
+            android:cursorVisible="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/hint_account"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color"
+            android:textCursorDrawable="@drawable/theme_color_cusor" />
+
+    </LinearLayout>
+
+    <!--输入密码-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:background="@color/color_white">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/img_password" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="10"
+            android:background="@drawable/activity_login_input_box"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hint_color"
+            android:textCursorDrawable="@drawable/theme_color_cusor" />
+    </LinearLayout>
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/type_login_rg"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="5dp"-->
+    <!--android:orientation="horizontal">-->
+    <!--<RadioButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:text="员工登录"/>-->
+    <!--<RadioButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="管理员登录"/>-->
+    <!--</RadioGroup>-->
+
+    <!--登录按钮-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button_disabled"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_size_middle" />
+
+    <!--注册按钮-->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_height"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:text="新用户"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/font_size_middle" />
+
+    <!--忘记密码-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/tv_ForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding"
+            android:layout_marginRight="@dimen/padding"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/action_forget_password"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_test_e"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="测试账号登陆"
+        android:textColor="@color/theme" />
+
+</LinearLayout>

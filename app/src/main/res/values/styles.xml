@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!--<item name="android:windowAnimationStyle">@style/AnimationActivity</item>-->
+
+    <!--tab标签页-->
+    <style name="bottom_tab">
+        <item name="android:layout_width" >0dp</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:layout_weight" >1</item>
+        <item name="android:text" >0dp</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textColor" >@android:color/black</item>
+        <item name="android:padding" >5dp</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:button" >@null</item>
+    </style>
+
+    <!--圆角ImageView-->
+    <declare-styleable name="roundedimageview">
+
+        <attr name="border_thickness"
+            format="dimension"/>
+
+        <attr name="border_inside_color"
+            format="color"/>
+
+        <attr name="border_outside_color"
+            format="color"/>
+    </declare-styleable>
+
+    <style name="default_button_style">
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="actionSheetAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/muna_base_action_sheet_push_in</item>
+        <item name="android:windowExitAnimation">@anim/muna_base_action_sheet_push_out</item>
+    </style>
+
+
+
+    <!-- 页面跳转动画-->
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity" mce_bogus="1">
+
+        　　　　　<!--进入一个Acitvity包括两部分，当前Activity退出动画，下个个Activity进入动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/left_in</item>  //下个Activty进入动画
+        <item name="android:activityOpenExitAnimation">@anim/right_out</item> //当前Activity退出的动画
+
+        　　　　<!--跳回一个Activity也包括两部分，当前Activity摧毁动画，上个Actiivty进入动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/right_in</item>  //上个Activity进入动画
+        <item name="android:activityCloseExitAnimation">@anim/left_out</item>   //当前Activity退出动画
+
+    </style>
+
+</resources>
